@@ -5,25 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discord Bots</title>
-    <link href="dist/output.css" rel="stylesheet" />
-    <link href="src/input.css" rel="stylesheet" />
+    <link href="output.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body class="dark:bg-gray-900">
-
+    
     <!-- navbar -->
-
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 w-full ">
 
       <!-- dark mode button -->
-
       <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        class="flex flex-wrap items-center justify-evenly mx-auto p-4"
       >
         <button
           id="theme-toggle"
           type="button"
           class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 flex"
-        ><span class="px-1">Dark</span>
+        >
+          <span class="px-1">Dark</span>
           <svg
             id="theme-toggle-dark-icon"
             class="hidden w-6 h-6"
@@ -52,17 +51,7 @@
 
         <!-- Discord Logo  -->
 
-        <a href="https://discord.js.org/#/" class="flex items-center">
-          <img
-            src="https://camo.githubusercontent.com/2993f7180d5cc3231060f66cfa1f0f65a1d09c0efd68d08d0190902ba9200d81/68747470733a2f2f7777772e7376677265706f2e636f6d2f73686f772f3335333635352f646973636f72642d69636f6e2e737667"
-            class="h-8 mr-3"
-            alt="Discord Logo"
-          />
-          <span
-            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >Discord.js</span
-          >
-        </a>
+        
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -96,17 +85,17 @@
           >
             <li>
               <a
-                href="#"
+                href="https://github.com/Lane-G-Smith/Lanesmith.Info-Bots"
                 class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                 aria-current="page"
-                >Home</a
+                >Website Code</a
               >
             </li>
             <li>
               <a
                 href="#"
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Contact</a
+                ></a
               >
             </li>
           </ul>
@@ -116,34 +105,42 @@
 
     <!-- self introduction -->
 
-    <section class="w-full flex justify-center sm:p-4">
+    <section class="w-full flex justify-center sm:my-4">
       <div
-        class="flex flex-col items-center bg-white border border-gray-200 shadow-md md:flex-row sm:max-h-fit sm:max-w-5xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+        class="p-10 flex flex-col items-center md:flex-row sm:max-h-fit sm:max-w-6xl text-center"
       >
-        <div class="flex flex-col justify-between p-4 leading-normal">
+        <div class="justify-center mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+          <div class="flex justify-center">
+          <a href="https://discord.js.org/#/" class="flex items-center justify-center mb-5 w-20">
+            <img
+              src="https://camo.githubusercontent.com/2993f7180d5cc3231060f66cfa1f0f65a1d09c0efd68d08d0190902ba9200d81/68747470733a2f2f7777772e7376677265706f2e636f6d2f73686f772f3335333635352f646973636f72642d69636f6e2e737667"
+              class="h-8 mr-3"
+              alt="Discord Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Discord.js</span
+            >
+          </a>
+          </div>
           <h5
             class="text-center mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
           >
-            LOTS OF BOTS
+            DISCORD BOTS
           </h5>
           <h5
             class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
             Developed By Lane Smith
           </h5>
-          <h5
-          class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-        >
-          This page is under active development. All bots and links will be updated soon
-        </h5>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-xl">
             As a new & learning developer, one of the initial tasks I undertook
             was to create automated bots for Discod, a platform that I utilize
             on a daily basis. Many of these bots utilize the Chat-GPT REST API
-            fom OpenAI. The Chat-GPT API allows the desired trigger & response
+            from OpenAI. The Chat-GPT API allows the desired trigger & response
             format as well as pesonality logic to be built right into the POST
-            request. Other bots leverage existing REST APIs that return data,
-            random quotes in this instance, from a database when tiggered. At
+            request. Other bots leverage existing REST APIs that return data
+            (random quotes in this instance) from a database when tiggered. At
             present, my focus is on developing my own REST APIs as well as
             formating my own databases. Managing my own APIs will enable me to
             enhance the functionality of my bots in the future.
@@ -154,21 +151,34 @@
 
     <!-- individual bot cards -->
 
-    <section
-      class="sm:flex sm:mx-10 overflow-hidden justify-center sm:flex-wrap sm:mb-20"
-    >
+    <section class="sm:flex justify-center sm:flex-wrap">
+
+      <!-- Code Buddy -->
       <div
-        href="#"
-        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg sm:flex-row sm:max-w-6xl dark:border-gray-700 dark:bg-gray-800 sm:m-1"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 sm:m-2 max-w-6xl"
       >
         <img
-          class="object-cover w-full rounded-t-lg min-h-full md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+          class="object-cover w-full min-h-full rounded-t-lg md:w-64 md:rounded-none md:rounded-l-lg"
           src="https://images.pexels.com/photos/3759364/pexels-photo-3759364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt=""
         />
         <div class="flex flex-col justify-between p-4 leading-normal">
+          <div class="flex-row w-full flex justify-center sm:justify-start mb-2">
+            <a
+              href="https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy"
+              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-4 w-20"
+            >
+              See Code
+            </a>
+            <a
+              href="https://discord.com/api/oauth2/authorize?client_id=1085396439754088539&permissions=414464855104&scope=bot"
+              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-4 w-20"
+            >
+              Invite Bot
+            </a>
+          </div>
           <h5
-            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            class="text-center py-2 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
             Code-Buddy: A Virtual Code Inteview
           </h5>
@@ -177,368 +187,231 @@
             This Bot will give random questions and code challenges based on
             what you want to practice and how difficult you want it to be. After
             you try to solve the challenge, Code-Buddy gives you the answer and
-            explains how to solve it. It even gives you links to places where
-            you can learn more. To use Code-Buddy, just tell it what subject you
-            want to practice, like "React" or "Javascript," and how hard you
-            want the question to be, like "1/10" or "7/10." Then Code-Buddy
-            gives you a random question. If you want the answer and a detailed
-            explanation, you just type "answer" after the question is given.
+            explains how to solve it. Code-Buddy even provides links to
+            documentation where you can go to learn more. To use Code-Buddy,
+            just tell it what subject you want to practice, like "React" or
+            "Javascript," and how hard you want the question to be, like "1/10"
+            or "7/10." Then Code-Buddy will give you a random question or code
+            challenge. If you want the answer and a detailed explanation, you
+            just type "answer" after the question is given.
           </p>
-          <div class="flex-row w-full flex justify-center">
+        </div>
+      </div>
+      <!-- GPT-Buddy -->
+      <div
+        href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 sm:m-2 max-w-6xl"
+      >
+        <img
+          class="object-cover w-full min-h-full rounded-t-lg md:w-64 md:rounded-none md:rounded-l-lg"
+          src="https://photos.smugmug.com/External-Website-Photos/n-MK8QBN/Github/i-KSRmzSX/3/8c563904/S/2023_03_07_22_34_03_2225405723_100_8-S.png"
+          alt=""
+        />
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <div class="flex-row w-full flex justify-center sm:justify-start mb-3">
             <a
-              href="https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
+              href="https://github.com/Lane-G-Smith/Discord-Bot-Vanilla-JS-GPT3.5-Turbo-0613"
+              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-4 w-20"
             >
               See Code
             </a>
             <a
-              href="https://discord.com/api/oauth2/authorize?client_id=1085396439754088539&permissions=414464855104&scope=bot"
+              href="https://discord.com/api/oauth2/authorize?client_id=1048031111973974057&permissions=414464855104&scope=bot"
               class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
             >
               Invite Bot
             </a>
           </div>
-        </div>
-      </div>
-      <div
-        href="#"
-        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg sm:flex-row sm:max-w-6xl dark:border-gray-700 dark:bg-gray-800 sm:m-1"
-      >
-        <img
-          class="object-cover w-full rounded-t-lg min-h-full md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-          src="https://images.pexels.com/photos/3759364/pexels-photo-3759364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt=""
-        />
-        <div class="flex flex-col justify-between p-4 leading-normal">
           <h5
-            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
-            GPT-Buddy: A Chat-GPT Powered Virtual Assistant
+            GPT-Buddy
           </h5>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            I made Code-Buddy to help me get ready for coding job interviews.
-            This Bot will give random questions and code challenges based on
-            what you want to practice and how difficult you want it to be. After
-            you try to solve the challenge, Code-Buddy gives you the answer and
-            explains how to solve it. It even gives you links to places where
-            you can learn more. To use Code-Buddy, just tell it what subject you
-            want to practice, like "React" or "Javascript," and how hard you
-            want the question to be, like "1/10" or "7/10." Then Code-Buddy
-            gives you a random question. If you want the answer and a detailed
-            explanation, you just type "answer" after the question is given.
+            I made GPT-Buddy so that I could have Chat-GPT at my fingertips at
+            all times, even on my phone! By creating a dedicated server just for
+            me and the Bot as well as dedicated text channels for each subject
+            that I am interested in I can look back on all of my previous
+            questions and answers with ease. I also created a dedicated channel
+            for the Bot to post links to resources that I might find helpful.
+            This Bot was programmed to be a personal assistant and will answer
+            all questions as well as explain the answers in detail. When asked,
+            GPT-Buddy will also provide links to sources and documentation when
+            needed. Simply start each query with "gpt-buddy" (not case
+            sensitive) followed by your question. GPT-Buddy started with
+            GPT-3.5, then was upgraded to Turbo, and is now currently running
+            GPT-3.5-Turbo-0613. When I get access to the GPT-4 REST API I will
+            upgrade again.
           </p>
-          <div class="flex-row w-full flex justify-center">
+        </div>
+      </div>
+      <!-- Ron Swanson -->
+      <div
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 sm:m-2 max-w-6xl"
+      >
+        <img
+          class="object-cover w-full min-h-full rounded-t-lg md:w-64 md:rounded-none md:rounded-l-lg"
+          src="https://camo.githubusercontent.com/549216733f2b32bbc4836400824b8afcffe1425c05750eb03a9218097af04f8f/68747470733a2f2f6375746577616c6c70617065722e6f72672f32342f726f6e2d7377616e736f6e2d706e672f726f6e2d7377616e736f6e2d626c616e6b2d74656d706c6174652d696d67666c69702e706e67"
+          alt=""
+        />
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <div class="flex-row w-full flex justify-center sm:justify-start mb-3">
             <a
-              href="https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy"
+              href="https://github.com/Lane-G-Smith/Discord-Bot-Ron-Swanson-Quotes"
               class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
             >
               See Code
             </a>
             <a
-              href="https://discord.com/api/oauth2/authorize?client_id=1085396439754088539&permissions=414464855104&scope=bot"
+              href="https://discord.com/api/oauth2/authorize?client_id=1129955440986431538&permissions=414464855104&scope=bot"
               class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
             >
               Invite Bot
             </a>
           </div>
-        </div>
-      </div>
-      <div
-        href="#"
-        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg sm:flex-row sm:max-w-6xl  sm:min-w-full dark:border-gray-700 dark:bg-gray-800 sm:m-1"
-      >
-        <img
-          class="object-cover w-full rounded-t-lg min-h-full md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-          src="https://images.pexels.com/photos/3759364/pexels-photo-3759364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt=""
-        />
-        <div class="flex flex-col justify-between p-4 leading-normal">
           <h5
-            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            class="text-center my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
             Ron Swanson Quote Generator
           </h5>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            A simple vanilla javascript Discord bot that posts quotes from Ron Swanson when called on using the rest API from 
-            <a href="https://github.com/jamesseanwright/ron-swanson-quotes" class="text-red-700">HERE</a>
-            and Responds to chat whenever someone types "Swanson"
-          </p>
-          <div class="flex-row w-full flex justify-center">
+            A simple vanilla javascript Discord bot that posts quotes from Ron
+            Swanson when called on using the rest API from
             <a
-              href="https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy"
+              class="text-blue-500"
+              href="https://github.com/jamesseanwright/ron-swanson-quotes"
+              >HERE</a
+            >
+            and Responds to chat whenever someone types "Swanson". This one,
+            along with my other quote generation bots are just for fun, and can
+            be pretty enteratining when let loose in a server with friends.
+          </p>
+        </div>
+      </div>
+      <!-- Kanye West Quote Generator -->
+      <div
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 sm:m-2 max-w-6xl"
+      >
+        <img
+          class="object-cover w-full min-h-full rounded-t-lg md:w-64 md:rounded-none md:rounded-l-lg"
+          src="https://29secrets.com/wp-content/uploads/2016/02/kanye-west-twitter-rant.jpeg"
+          alt=""
+        />
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <div class="flex-row w-full flex justify-center sm:justify-start mb-3">
+            <a
+              href="https://github.com/Lane-G-Smith/Discord-Bot-Kanye-West-Quotes"
               class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
             >
               See Code
             </a>
             <a
-              href="https://discord.com/api/oauth2/authorize?client_id=1085396439754088539&permissions=414464855104&scope=bot"
+              href="https://discord.com/api/oauth2/authorize?client_id=1129908300834684980&permissions=414464855104&scope=bot"
               class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
             >
               Invite Bot
             </a>
           </div>
-        </div>
-      </div>
-      <div
-        href="#"
-        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg sm:flex-row sm:max-w-6xl dark:border-gray-700 dark:bg-gray-800 sm:m-1"
-      >
-        <img
-          class="object-cover w-full rounded-t-lg min-h-full md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-          src="https://images.pexels.com/photos/3759364/pexels-photo-3759364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt=""
-        />
-        <div class="flex flex-col justify-between p-4 leading-normal">
           <h5
-            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
             Kanye West Quote Generator
           </h5>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            I made Code-Buddy to help me get ready for coding job interviews.
-            This Bot will give random questions and code challenges based on
-            what you want to practice and how difficult you want it to be. After
-            you try to solve the challenge, Code-Buddy gives you the answer and
-            explains how to solve it. It even gives you links to places where
-            you can learn more. To use Code-Buddy, just tell it what subject you
-            want to practice, like "React" or "Javascript," and how hard you
-            want the question to be, like "1/10" or "7/10." Then Code-Buddy
-            gives you a random question. If you want the answer and a detailed
-            explanation, you just type "answer" after the question is given.
+            A simple vanilla javascript Discord bot that posts quotes from Kanye
+            West when called on using the rest API from
+            <a class="text-blue-500" href="https://github.com/ajzbc/kanye.rest"
+              >HERE</a
+            >
+            and Responds to chat whenever someone types "Kanye". This one, along
+            with my other quote generation bots are just for fun, and can be
+            pretty enteratining when let loose in a server with friends.
           </p>
-          <div class="flex-row w-full flex justify-center">
+        </div>
+      </div>
+      <!-- Trump Quote Generator -->
+      <div
+        href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 sm:m-2 max-w-6xl"
+      >
+        <img
+          class="object-cover w-full min-h-full rounded-t-lg md:w-64 md:rounded-none md:rounded-l-lg"
+          src="https://camo.githubusercontent.com/c5daf3bd65ef3405ce23c0c3c974be48d6fdb062a6b5534d7f6f2c3b7294ce79/68747470733a2f2f70797869732e6e796d61672e636f6d2f76312f696d67732f6132342f3439302f636239376562666565353732623161313232646437353361663136663061376335662d30392d646f6e616c642d7472756d702d62756c6c792e727371756172652e773730302e6a7067"
+          alt=""
+        />
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <div class="flex-row w-full flex justify-center sm:justify-start mb-3">
             <a
-              href="https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy"
+              href="https://github.com/Lane-G-Smith/Discord-Bot-Trump-Quotes"
               class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
             >
               See Code
             </a>
             <a
-              href="https://discord.com/api/oauth2/authorize?client_id=1085396439754088539&permissions=414464855104&scope=bot"
+              href="https://discord.com/api/oauth2/authorize?client_id=1129949100410929273&permissions=414464855104&scope=bot"
               class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
             >
               Invite Bot
             </a>
           </div>
-        </div>
-      </div>
-      <div
-        href="#"
-        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg sm:flex-row sm:max-w-6xl dark:border-gray-700 dark:bg-gray-800 sm:m-1"
-      >
-        <img
-          class="object-cover w-full rounded-t-lg min-h-full md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-          src="https://images.pexels.com/photos/3759364/pexels-photo-3759364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt=""
-        />
-        <div class="flex flex-col justify-between p-4 leading-normal">
           <h5
-            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
             Donald Trump Quote Generator
           </h5>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            I made Code-Buddy to help me get ready for coding job interviews.
-            This Bot will give random questions and code challenges based on
-            what you want to practice and how difficult you want it to be. After
-            you try to solve the challenge, Code-Buddy gives you the answer and
-            explains how to solve it. It even gives you links to places where
-            you can learn more. To use Code-Buddy, just tell it what subject you
-            want to practice, like "React" or "Javascript," and how hard you
-            want the question to be, like "1/10" or "7/10." Then Code-Buddy
-            gives you a random question. If you want the answer and a detailed
-            explanation, you just type "answer" after the question is given.
+            A simple vanilla javascript Discord bot that posts quotes from
+            Donald Trump when called on using the rest API from
+            <a class="text-blue-500" href="https://github.com/tronalddump-io"
+              >HERE</a
+            >
+            and Responds to chat whenever someone types "Trump". This one, along
+            with my other quote generation bots are just for fun, and can be
+            pretty enteratining when let loose in a server with friends. I
+            recently made a version of this that had common political keyword
+            triggers such as "republican" "democrat" "president" "liberal" etc.
+            to discourage talking about politics in my gaming server. It worked
+            pretty well and always made people laugh.
           </p>
-          <div class="flex-row w-full flex justify-center">
-            <a
-              href="https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-            >
-              See Code
-            </a>
-            <a
-              href="https://discord.com/api/oauth2/authorize?client_id=1085396439754088539&permissions=414464855104&scope=bot"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-            >
-              Invite Bot
-            </a>
-          </div>
         </div>
       </div>
-      <div
-        href="#"
-        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg sm:flex-row sm:max-w-6xl dark:border-gray-700 dark:bg-gray-800 sm:m-1"
-      >
-        <img
-          class="object-cover w-full rounded-t-lg min-h-full md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-          src="https://images.pexels.com/photos/3759364/pexels-photo-3759364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt=""
-        />
-        <div class="flex flex-col justify-between p-4 leading-normal">
-          <h5
-            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-          >
-            Your Mom Jokes (NSFW)
-          </h5>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            I made Code-Buddy to help me get ready for coding job interviews.
-            This Bot will give random questions and code challenges based on
-            what you want to practice and how difficult you want it to be. After
-            you try to solve the challenge, Code-Buddy gives you the answer and
-            explains how to solve it. It even gives you links to places where
-            you can learn more. To use Code-Buddy, just tell it what subject you
-            want to practice, like "React" or "Javascript," and how hard you
-            want the question to be, like "1/10" or "7/10." Then Code-Buddy
-            gives you a random question. If you want the answer and a detailed
-            explanation, you just type "answer" after the question is given.
-          </p>
-          <div class="flex-row w-full flex justify-center">
-            <a
-              href="https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-            >
-              See Code
-            </a>
-            <a
-              href="https://discord.com/api/oauth2/authorize?client_id=1085396439754088539&permissions=414464855104&scope=bot"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-            >
-              Invite Bot
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-      href="#"
-      class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg sm:flex-row sm:max-w-6xl dark:border-gray-700 dark:bg-gray-800 sm:m-1"
-    >
-      <img
-        class="object-cover w-full rounded-t-lg min-h-full md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-        src="https://images.pexels.com/photos/3759364/pexels-photo-3759364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt=""
-      />
-      <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5
-          class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-        >
-          Random Fact Generator
-        </h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          I made Code-Buddy to help me get ready for coding job interviews.
-          This Bot will give random questions and code challenges based on
-          what you want to practice and how difficult you want it to be. After
-          you try to solve the challenge, Code-Buddy gives you the answer and
-          explains how to solve it. It even gives you links to places where
-          you can learn more. To use Code-Buddy, just tell it what subject you
-          want to practice, like "React" or "Javascript," and how hard you
-          want the question to be, like "1/10" or "7/10." Then Code-Buddy
-          gives you a random question. If you want the answer and a detailed
-          explanation, you just type "answer" after the question is given.
-        </p>
-        <div class="flex-row w-full flex justify-center">
-          <a
-            href="https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy"
-            class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-          >
-            See Code
-          </a>
-          <a
-            href="https://discord.com/api/oauth2/authorize?client_id=1085396439754088539&permissions=414464855104&scope=bot"
-            class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-          >
-            Invite Bot
-          </a>
-        </div>
-      </div>
-    </div>
-    <div
-    href="#"
-    class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg sm:flex-row sm:max-w-6xl dark:border-gray-700 dark:bg-gray-800 sm:m-1"
-  >
-    <img
-      class="object-cover w-full rounded-t-lg min-h-full md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-      src="https://images.pexels.com/photos/3759364/pexels-photo-3759364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      alt=""
-    />
-    <div class="flex flex-col justify-between p-4 leading-normal">
-      <h5
-        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-      >
-        Chuck Norris Joke Generator
-      </h5>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-        I made Code-Buddy to help me get ready for coding job interviews.
-        This Bot will give random questions and code challenges based on
-        what you want to practice and how difficult you want it to be. After
-        you try to solve the challenge, Code-Buddy gives you the answer and
-        explains how to solve it. It even gives you links to places where
-        you can learn more. To use Code-Buddy, just tell it what subject you
-        want to practice, like "React" or "Javascript," and how hard you
-        want the question to be, like "1/10" or "7/10." Then Code-Buddy
-        gives you a random question. If you want the answer and a detailed
-        explanation, you just type "answer" after the question is given.
-      </p>
-      <div class="flex-row w-full flex justify-center">
-        <a
-          href="https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy"
-          class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-        >
-          See Code
-        </a>
-        <a
-          href="https://discord.com/api/oauth2/authorize?client_id=1085396439754088539&permissions=414464855104&scope=bot"
-          class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-        >
-          Invite Bot
-        </a>
-      </div>
-    </div>
-  </div>
-  <div
-  href="#"
-  class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg sm:flex-row sm:max-w-6xl dark:border-gray-700 dark:bg-gray-800 sm:m-1"
->
-  <img
-    class="object-cover w-full rounded-t-lg min-h-full md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-    src="https://images.pexels.com/photos/3759364/pexels-photo-3759364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    alt=""
-  />
-  <div class="flex flex-col justify-between p-4 leading-normal">
-    <h5
-      class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-    >
-      Terribly Written Insults Generator (NSFW)
-    </h5>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-      I made Code-Buddy to help me get ready for coding job interviews.
-      This Bot will give random questions and code challenges based on
-      what you want to practice and how difficult you want it to be. After
-      you try to solve the challenge, Code-Buddy gives you the answer and
-      explains how to solve it. It even gives you links to places where
-      you can learn more. To use Code-Buddy, just tell it what subject you
-      want to practice, like "React" or "Javascript," and how hard you
-      want the question to be, like "1/10" or "7/10." Then Code-Buddy
-      gives you a random question. If you want the answer and a detailed
-      explanation, you just type "answer" after the question is given.
-    </p>
-    <div class="flex-row w-full flex justify-center">
-      <a
-        href="https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy"
-        class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-      >
-        See Code
-      </a>
-      <a
-        href="https://discord.com/api/oauth2/authorize?client_id=1085396439754088539&permissions=414464855104&scope=bot"
-        class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-      >
-        Invite Bot
-      </a>
-    </div>
-  </div>
-</div>
+      <!-- Mom Jokes -->
+
+      <!-- Random Fact Generator -->
+
+      <!-- Chuck Norris Jokes -->
+
+      <!--Terribly Written Insults -->
     </section>
+    <!-- footer with social media links -->
+    <footer
+      class="min-w-full sm: p-10 sm:flex h-40 sm:justify-center sm:items-center dark:text-white"
+    >
+      <h2 class="text-xl font-bold px-5 text-center">
+        Web Design By Lane Smith: Copyright 2023
+      </h2>
+      <ul class="width:full flex sm:flex justify-center flex-wrap">
+        <li class="h-8 w-8 m-3">
+          <a href="https://www.linkedin.com/in/lane-g-smith"
+            ><img
+              src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
+          /></a>
+        </li>
+        <li class="h-8 w-8 m-3">
+          <a href="https://www.instagram.com/lanegpersonal/"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+          /></a>
+        </li>
+        <li class="h-8 w-8 m-3">
+          <a href="https://github.com/Lane-G-Smith">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLHv_jIswdZGXPRC_L76ITDc4nxvOO8tF22AYPXvpnO50JSvbKcPf59QRmP6GxNglhGyI&usqp=CAU"
+          /></a>
+        </li>
+      </ul>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
-    <script src="src/main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
