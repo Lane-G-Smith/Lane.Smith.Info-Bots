@@ -6,164 +6,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discord Bots</title>
     <link href="output.css" rel="stylesheet" />
-    <link href="styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/a8cc471b41.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body class="dark:bg-gray-900">
-    
+
+  <!-- body section -->
+
+  <body class="dark:bg-gray-900 bg-slate-50">
     <!-- navbar -->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900 w-full ">
 
+    <nav
+      class="dark:bg-gray-900 w-full flex flex-col sm:flex-row flex-wrap items-center justify-between mx-auto p-5"
+    >
       <!-- dark mode button -->
-      <div
-        class="flex flex-wrap items-center justify-evenly mx-auto p-4"
+
+      <button
+        id="theme-toggle"
+        type="button"
+        class="text-blue-700 hover:scale-125 duration-100 hover:duration-100 rounded-lg text-sm p-2 mb-4 flex"
       >
-        <button
-          id="theme-toggle"
-          type="button"
-          class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 flex"
-        >
-          <span class="px-1">Dark</span>
-          <svg
-            id="theme-toggle-dark-icon"
-            class="hidden w-6 h-6"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-            ></path>
-          </svg>
-          <svg
-            id="theme-toggle-light-icon"
-            class="hidden w-6 h-6"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
+        <span class="p-1 font-bold">Dark</span>
+        <i class="h-8 w-8 fa-regular fa-moon fa-2xs" style="color: #1a56db"></i>
+      </button>
 
-        <!-- Discord Logo  -->
+      <!-- Table describing what technologies & tools used -->
 
-        
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-
-        <!-- Burger mobile menu -->
-
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-          >
-            <li>
-              <a
-                href="https://github.com/Lane-G-Smith/Lanesmith.Info-Bots"
-                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page"
-                >Website Code</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                ></a
-              >
-            </li>
-          </ul>
-        </div>
+      <div class="sm:flex">
+        <table class="block text-xs font-bold text-center dark:text-white">
+          <th>Built Using</th>
+          <tr class="h-7">
+            <td class="inline-block w-16">
+              <img
+                class="p-1 h-10 w-10 fa-brands fa-html5 fa-beat fa-2xs"
+                style="color: #ff0000"
+              />
+              <h2 class=""><strong>HTML5</strong></h2>
+            </td>
+            <td class="inline-block w-16">
+              <img
+                class="p-1 h-10 w-10 fa-brands fa-css3-alt fa-beat fa-2xs"
+                style="color: #005eff"
+              />
+              <h2 class=""><strong>CSS3</strong></h2>
+            </td>
+            <td class="inline-block w-16">
+              <img
+                class="p-1 h-10 w-10 fa-brands fa-square-js fa-beat fa-2xs"
+                style="color: #ffdd00"
+              />
+              <h2 class=""><strong>ES6</strong></h2>
+            </td>
+            <td class="inline-block align-bottom w-16">
+              <img
+                class="p-2 h-12 w-full justify-start fa-beat bg-cover"
+                src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
+              />
+              <h2 class="text-center"><strong>TAILWIND</strong></h2>
+            </td>
+          </tr>
+        </table>
       </div>
     </nav>
 
     <!-- self introduction -->
 
-    <section class="w-full flex justify-center sm:my-4">
-      <div
-        class="p-10 flex flex-col items-center md:flex-row sm:max-h-fit sm:max-w-6xl text-center"
-      >
-        <div class="justify-center mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-          <div class="flex justify-center">
-          <a href="https://discord.js.org/#/" class="flex items-center justify-center mb-5 w-20">
+    <section class="w-screen flex justify-center">
+      <div class="flex-col max-w-6xl text-center m-5 pb-5">
+        <div class="flex justify-center">
+          <a
+            href="https://discord.js.org/#/"
+            class="flex items-center justify-center mb-5 w-20"
+          >
             <img
               src="https://camo.githubusercontent.com/2993f7180d5cc3231060f66cfa1f0f65a1d09c0efd68d08d0190902ba9200d81/68747470733a2f2f7777772e7376677265706f2e636f6d2f73686f772f3335333635352f646973636f72642d69636f6e2e737667"
               class="h-8 mr-3"
               alt="Discord Logo"
             />
-            <span
-              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            <span class="text-2xl font-semibold dark:text-white"
               >Discord.js</span
             >
           </a>
-          </div>
-          <h5
-            class="text-center mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
-          >
-            DISCORD BOTS
-          </h5>
-          <h5
-            class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-          >
-            Developed By Lane Smith
-          </h5>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-xl">
-            As a new & learning developer, one of the initial tasks I undertook
-            was to create automated bots for Discord, a platform that I utilize
-            on a daily basis. Many of these bots utilize the Chat-GPT REST API
-            from OpenAI. The Chat-GPT API allows the desired trigger & response
-            format as well as personality logic to be built right into the POST
-            request. Other bots leverage existing REST APIs that return data
-            (random quotes in this instance) from a database when triggered. At
-            present, my focus is on developing my own REST APIs as well as
-            formatting my own databases. Managing my own APIs will enable me to
-            enhance the functionality of my bots in the future.
-          </p>
         </div>
+        <h5
+          class="text-center mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+        >
+          DISCORD BOTS
+        </h5>
+        <h5
+          class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+        >
+          Developed By Lane Smith
+        </h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-xl">
+          As a new & learning developer, one of the initial tasks I undertook
+          was to create automated bots for Discord, a platform that I use on a
+          daily basis. Many of these bots utilize the Chat-GPT REST API from
+          OpenAI. The Chat-GPT API allows the desired trigger & response format
+          as well as personality logic to be built right into the POST request.
+          Other bots leverage existing REST APIs that return data (random quotes
+          in this instance) from a database when triggered. At present, my focus
+          is on developing my own REST APIs as well as formatting my own
+          databases. Managing my own APIs will enable me to enhance the
+          functionality of my bots in the future.
+        </p>
       </div>
     </section>
 
     <!-- individual bot cards -->
 
-    <section class="sm:flex justify-center sm:flex-wrap">
-
+    <section class="lg:flex justify-center lg:flex-wrap">
       <!-- Code Buddy -->
       <div
         class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 sm:m-2 max-w-6xl"
       >
         <img
-          class="object-cover w-full min-h-full rounded-t-lg md:w-64 md:rounded-none md:rounded-l-lg"
+          class="w-full object-cover rounded-t-lg h-96 sm:p-5 sm:h-64 sm:w-64 sm:rounded-full"
           src="https://images.pexels.com/photos/3759364/pexels-photo-3759364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="rubber ducky picture"
+          alt="A humanoid robot picture"
         />
         <div class="flex flex-col justify-between p-4 leading-normal">
-          <div class="flex-row w-full flex justify-center sm:justify-start mb-2">
+          <div class="flex flex-row justify-center mb-2">
             <a
               href="https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy"
               class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-4 w-20"
@@ -172,15 +136,15 @@
             </a>
             <a
               href="https://discord.com/api/oauth2/authorize?client_id=1085396439754088539&permissions=414464855104&scope=bot"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-4 w-20"
+              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
             >
               Invite Bot
             </a>
           </div>
           <h5
-            class="text-center py-2 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
-            Code-Buddy: A Virtual Code Interview
+            Code-Buddy
           </h5>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
             I made Code-Buddy to help me get ready for coding job interviews.
@@ -197,18 +161,18 @@
           </p>
         </div>
       </div>
+
       <!-- GPT-Buddy -->
       <div
-        href="#"
         class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 sm:m-2 max-w-6xl"
       >
         <img
-          class="object-cover w-full min-h-full rounded-t-lg md:w-64 md:rounded-none md:rounded-l-lg"
+          class="w-full object-cover rounded-t-lg h-96 sm:p-5 sm:h-64 sm:w-64 sm:rounded-full"
           src="https://photos.smugmug.com/External-Website-Photos/n-MK8QBN/Github/i-KSRmzSX/3/8c563904/S/2023_03_07_22_34_03_2225405723_100_8-S.png"
           alt="A humanoid robot picture"
         />
         <div class="flex flex-col justify-between p-4 leading-normal">
-          <div class="flex-row w-full flex justify-center sm:justify-start mb-3">
+          <div class="flex flex-row justify-center mb-2">
             <a
               href="https://github.com/Lane-G-Smith/Discord-Bot-Vanilla-JS-GPT3.5-Turbo-0613"
               class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-4 w-20"
@@ -228,16 +192,16 @@
             GPT-Buddy
           </h5>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            I made GPT-Buddy so that I could have Chat-GPT at my fingertips at
-            all times, even on my phone! By creating a dedicated server just for
+            I made GPT-Buddy so that I could always have Chat-GPT at my fingertips, even on my phone!
+            By creating a dedicated server just for
             me and the Bot as well as dedicated text channels for each subject
             that I am interested in I can look back on all of my previous
             questions and answers with ease. I also created a dedicated channel
             for the Bot to post links to resources that I might find helpful.
             This Bot was programmed to be a personal assistant and will answer
-            all questions as well as explain the answers in detail. When asked,
+            all questions and explain the answers in detail. When asked,
             GPT-Buddy will also provide links to sources and documentation when
-            needed. Simply start each query with "gpt-buddy" (not case
+            needed. Start each query with "gpt-buddy" (not case
             sensitive) followed by your question. GPT-Buddy started with
             GPT-3.5, then was upgraded to Turbo, and is now currently running
             GPT-3.5-Turbo-0613. When I get access to the GPT-4 REST API I will
@@ -250,12 +214,12 @@
         class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 sm:m-2 max-w-6xl"
       >
         <img
-          class="object-cover w-full min-h-full rounded-t-lg md:w-64 md:rounded-none md:rounded-l-lg"
+          class="w-full object-cover rounded-t-lg h-96 sm:p-5 sm:h-64 sm:w-64 sm:rounded-full"
           src="https://camo.githubusercontent.com/549216733f2b32bbc4836400824b8afcffe1425c05750eb03a9218097af04f8f/68747470733a2f2f6375746577616c6c70617065722e6f72672f32342f726f6e2d7377616e736f6e2d706e672f726f6e2d7377616e736f6e2d626c616e6b2d74656d706c6174652d696d67666c69702e706e67"
           alt="Ron Swanson, a grumpy man with a mustache"
         />
         <div class="flex flex-col justify-between p-4 leading-normal">
-          <div class="flex-row w-full flex justify-center sm:justify-start mb-3">
+          <div class="flex flex-row justify-center mb-2">
             <a
               href="https://github.com/Lane-G-Smith/Discord-Bot-Ron-Swanson-Quotes"
               class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
@@ -272,7 +236,7 @@
           <h5
             class="text-center my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
-            Ron Swanson Quote Generator
+            Ron Swanson: Quote Generator
           </h5>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
             A simple vanilla javascript Discord bot that posts quotes from Ron
@@ -293,12 +257,12 @@
         class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 sm:m-2 max-w-6xl"
       >
         <img
-          class="object-cover w-full min-h-full rounded-t-lg md:w-64 md:rounded-none md:rounded-l-lg"
+          class="w-full object-cover rounded-t-lg h-96 sm:p-5 sm:h-64 sm:w-64 sm:rounded-full"
           src="https://29secrets.com/wp-content/uploads/2016/02/kanye-west-twitter-rant.jpeg"
           alt="Picture of Kanye West, a bald African American man"
         />
         <div class="flex flex-col justify-between p-4 leading-normal">
-          <div class="flex-row w-full flex justify-center sm:justify-start mb-3">
+          <div class="flex flex-row justify-center mb-2">
             <a
               href="https://github.com/Lane-G-Smith/Discord-Bot-Kanye-West-Quotes"
               class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
@@ -315,7 +279,7 @@
           <h5
             class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
-            Kanye West Quote Generator
+            Kanye West: Quote Generator
           </h5>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
             A simple vanilla javascript Discord bot that posts quotes from Kanye
@@ -335,12 +299,12 @@
         class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 sm:m-2 max-w-6xl"
       >
         <img
-          class="object-cover w-full min-h-full rounded-t-lg md:w-64 md:rounded-none md:rounded-l-lg"
+          class="w-full object-cover rounded-t-lg h-96 sm:p-5 sm:h-64 sm:w-64 sm:rounded-full"
           src="https://camo.githubusercontent.com/c5daf3bd65ef3405ce23c0c3c974be48d6fdb062a6b5534d7f6f2c3b7294ce79/68747470733a2f2f70797869732e6e796d61672e636f6d2f76312f696d67732f6132342f3439302f636239376562666565353732623161313232646437353361663136663061376335662d30392d646f6e616c642d7472756d702d62756c6c792e727371756172652e773730302e6a7067"
           alt="Picture of Donald Trump, looking frazzled"
         />
         <div class="flex flex-col justify-between p-4 leading-normal">
-          <div class="flex-row w-full flex justify-center sm:justify-start mb-3">
+          <div class="flex flex-row justify-center mb-2">
             <a
               href="https://github.com/Lane-G-Smith/Discord-Bot-Trump-Quotes"
               class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
@@ -357,7 +321,7 @@
           <h5
             class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
-            Donald Trump Quote Generator
+            Donald Trump: Quote Generator
           </h5>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
             A simple vanilla javascript Discord bot that posts quotes from
@@ -368,27 +332,71 @@
             and Responds to chat whenever someone types "Trump". This one, along
             with my other quote generation bots are just for fun, and can be
             pretty entertaining when let loose in a server with friends. I
-            recently made a version of this that had multiple common political keyword
-            triggers such as "republican" "democrat" "president" "liberal" etc.
-            to discourage talking about politics in my gaming server. It worked
-            pretty well and always made people laugh.
+            recently made a version of this that had multiple common political
+            keyword triggers such as "republican" "democrat" "president"
+            "liberal" etc. to discourage people from talking about politics in
+            my gaming server. It worked pretty well and always made people
+            laugh.
           </p>
         </div>
       </div>
-      <!-- Mom Jokes -->
+
+      <!-- Chuck Norris Joke generator -->
+
+      <div
+        href="#"
+        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 sm:m-2 max-w-6xl"
+      >
+        <img
+          class="w-full object-cover rounded-t-lg h-96 sm:p-5 sm:h-64 sm:w-64 sm:rounded-full"
+          src="https://freepngimg.com/thumb/chuck_norris/97549-chuck-norris-free-hd-image.png"
+          alt="Picture of Donald Trump, looking frazzled"
+        />
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <div class="flex flex-row justify-center mb-2">
+            <a
+              href="https://github.com/Lane-G-Smith/Discord-Bot-Chuck-Norris-Jokes"
+              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
+            >
+              See Code
+            </a>
+            <a
+              href="https://discord.com/api/oauth2/authorize?client_id=1135640906473689139&permissions=414464855104&scope=bot"
+              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
+            >
+              Invite Bot
+            </a>
+          </div>
+          <h5
+            class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          >
+            Chuck Norris Joke Generator
+          </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            A simple vanilla javascript Discord bot that posts Chuck Norris jokes when called on using the rest API from
+            <a class="text-blue-500" href="https://github.com/chucknorris-io"
+              >HERE</a
+            >
+            and Responds to chat whenever someone types "chuck". This one, along
+            with my other quote generation and quote bots are just for fun and can be
+            pretty entertaining when let loose in a server with friends.
+          </p>
+        </div>
+      </div>
 
       <!-- Random Fact Generator -->
 
-      <!-- Chuck Norris Jokes -->
-
       <!--Terribly Written Insults -->
+      
     </section>
+
     <!-- footer with social media links -->
+
     <footer
       class="min-w-full sm: p-10 sm:flex h-40 sm:justify-center sm:items-center dark:text-white"
     >
       <h2 class="text-xl font-bold px-5 text-center">
-        Web Design By Lane Smith: Copyright 2023
+        Web Design By Lane Smith
       </h2>
       <ul class="width:full flex sm:flex justify-center flex-wrap">
         <li class="h-8 w-8 m-3">
@@ -409,9 +417,17 @@
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLHv_jIswdZGXPRC_L76ITDc4nxvOO8tF22AYPXvpnO50JSvbKcPf59QRmP6GxNglhGyI&usqp=CAU"
           /></a>
         </li>
+        <li class="h-8 w-8 m-3">
+          <a
+            href="https://github.com/Lane-G-Smith/Lanesmith.Info-Bots"
+            class="block bg-blue-700 rounded bg-transparent text-blue-700 md:p-0 dark:text-blue-500 justify-center font-medium"
+            aria-current="page"
+            >Website <br />Code</a
+          >
+        </li>
       </ul>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
+
