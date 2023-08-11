@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lost Of Bots</title>
-    <link href="output.css" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/a8cc471b41.js"
       crossorigin="anonymous"
@@ -14,70 +14,34 @@
 
   <!-- body section -->
 
-  <body class="dark:bg-gray-900 bg-slate-50 overflow-x-hidden">
+  <body class="dark:bg-gray-900 bg-slate-50 overflow-x-hidden m-1">
+
     <!-- navbar -->
 
     <nav
-      class="dark:bg-gray-900 w-full flex flex-col sm:flex-row flex-wrap items-center justify-between mx-auto p-5"
-    >
-      <!-- dark mode button -->
+      class="dark:bg-gray-900 w-full flex sm:flex-row flex-wrap items-center sm:justify-start justify-e sm:self-end"
+    >     
 
-      <button
+        <!-- dark mode button -->
+
+        <button
         id="theme-toggle"
         type="button"
-        class="text-blue-700 hover:scale-125 duration-100 hover:duration-100 rounded-lg text-sm p-2 mb-4 flex"
+        class="text-blue-700 hover:scale-110 duration-100 hover:duration-100 rounded-lg flex sm:ml-2 mx-2"
       >
         <span class="p-1 font-bold">Dark</span>
         <i class="h-8 w-8 fa-regular fa-moon fa-2xs" style="color: #1a56db"></i>
       </button>
-
-      <!-- Table describing what technologies & tools used -->
-
-      <div class="sm:flex">
-        <table class="block text-xs font-bold text-center dark:text-white">
-          <th>Built Using</th>
-          <tr class="h-6">
-            <td class="inline-block w-16">
-              <img
-                class="p-1 h-10 w-10 fa-brands fa-html5 fa-2xs"
-                style="color: #ff0000"
-              />
-              <h2 class=""><strong>HTML5</strong></h2>
-            </td>
-            <td class="inline-block w-16">
-              <img
-                class="p-1 h-10 w-10 fa-brands fa-css3-alt fa-2xs"
-                style="color: #005eff"
-              />
-              <h2 class=""><strong>CSS3</strong></h2>
-            </td>
-            <td class="inline-block w-16">
-              <img
-                class="p-1 h-10 w-10 fa-brands fa-square-js fa-2xs"
-                style="color: #ffdd00"
-              />
-              <h2 class=""><strong>ES6</strong></h2>
-            </td>
-            <td class="inline-block align-bottom w-16">
-              <img
-                class="p-2 h-12 w-full justify-start bg-cover"
-                src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
-              />
-              <h2 class="text-center"><strong>TAILWIND</strong></h2>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </nav>
+      </nav>
 
     <!-- self introduction -->
 
-    <section class="w-screen flex justify-center">
+    <section class="flex justify-center">
       <div class="flex-col max-w-6xl text-center pb-5">
-        <div class="flex justify-center">
+        <div class="flex justify-center mt-8 sm:mt-0">
           <a
             href="https://discord.js.org/#/"
-            class="flex items-center justify-center mb-5 w-20"
+            class="flex items-center justify-center mb-5 w-20  hover:scale-110 duration-100 hover:duration-100"
           >
             <img
               src="https://camo.githubusercontent.com/2993f7180d5cc3231060f66cfa1f0f65a1d09c0efd68d08d0190902ba9200d81/68747470733a2f2f7777772e7376677265706f2e636f6d2f73686f772f3335333635352f646973636f72642d69636f6e2e737667"
@@ -90,7 +54,7 @@
           </a>
         </div>
         <h5
-          class="text-center my-12 text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+          class="text-center my-8 sm:my-12 text-6xl sm:text-8xl font-extrabold tracking-tight text-gray-900 dark:text-white"
         >
           LOTS OF BOTS
         </h5>
@@ -99,7 +63,7 @@
         >
           Developed By Lane Smith
         </h5>
-        <p class="mb-3 mx-2 font-normal text-gray-700 dark:text-gray-400 text-xl">
+        <p class="text-left mb-3 mx-2 font-normal text-gray-700 dark:text-gray-400 text-xl">
           As an entry-level developer, one of the initial tasks I undertook was
           to create automated bots for Discord, a platform that I use on a daily
           basis. Many of these bots utilize the Chat-GPT REST API from OpenAI.
@@ -117,7 +81,9 @@
     <!-- individual bot cards -->
 
     <section class="lg:flex justify-center lg:flex-wrap">
+
       <!-- Code Buddy -->
+
       <div
         class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 mx-2 my-3 max-w-6xl"
       >
@@ -128,18 +94,17 @@
         />
         <div class="flex flex-col justify-between p-4 leading-normal">
           <div class="flex flex-row justify-center mb-2">
-            <a
-              href="https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-4 w-20"
-            >
-              See Code
-            </a>
-            <a
-              href="https://discord.com/api/oauth2/authorize?client_id=1085396439754088539&permissions=414464855104&scope=bot"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-            >
-              Invite Bot
-            </a>
+          </button>
+          <button class="sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+            <h2 class="font-bold text-xl text-white">
+              <a class="cursor-pointer" href="https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy">See Code</a>
+            </h2>
+          </button>
+          <button class="sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+            <h2 class="font-bold text-xl text-white">
+              <a class="cursor-pointer" href="https://discord.com/api/oauth2/authorize?client_id=1085396439754088539&permissions=414464855104&scope=bot">Invite Bot</a>
+            </h2>
+          </button>
           </div>
           <h5
             class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -163,6 +128,7 @@
       </div>
 
       <!-- GPT-Buddy -->
+
       <div
         class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 mx-2 my-3 max-w-6xl"
       >
@@ -173,18 +139,16 @@
         />
         <div class="flex flex-col justify-between p-4 leading-normal">
           <div class="flex flex-row justify-center mb-2">
-            <a
-              href="https://github.com/Lane-G-Smith/Discord-Bot-Vanilla-JS-GPT3.5-Turbo-0613"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-4 w-20"
-            >
-              See Code
-            </a>
-            <a
-              href="https://discord.com/api/oauth2/authorize?client_id=1048031111973974057&permissions=414464855104&scope=bot"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-            >
-              Invite Bot
-            </a>
+            <button class="sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+              <h2 class="font-bold text-xl text-white">
+                <a class="cursor-pointer" href="https://github.com/Lane-G-Smith/Discord-Bot-Vanilla-JS-GPT3.5-Turbo-0613">See Code</a>
+              </h2>
+            </button>
+            <button class="sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+              <h2 class="font-bold text-xl text-white">
+                <a class="cursor-pointer" href="https://discord.com/api/oauth2/authorize?client_id=1048031111973974057&permissions=414464855104&scope=bot">Invite Bot</a>
+              </h2>
+            </button>
           </div>
           <h5
             class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -204,7 +168,9 @@
           </p>
         </div>
       </div>
+
       <!-- Ron Swanson -->
+
       <div
         class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 mx-2 my-3 max-w-6xl"
       >
@@ -215,18 +181,16 @@
         />
         <div class="flex flex-col justify-between p-4 leading-normal">
           <div class="flex flex-row justify-center mb-2">
-            <a
-              href="https://github.com/Lane-G-Smith/Discord-Bot-Ron-Swanson-Quotes"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-            >
-              See Code
-            </a>
-            <a
-              href="https://discord.com/api/oauth2/authorize?client_id=1129955440986431538&permissions=414464855104&scope=bot"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-            >
-              Invite Bot
-            </a>
+            <button class="sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+              <h2 class="font-bold text-xl text-white">
+                <a class="cursor-pointer" href="https://github.com/Lane-G-Smith/Discord-Bot-Ron-Swanson-Quotes">See Code</a>
+              </h2>
+            </button>
+            <button class="sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+              <h2 class="font-bold text-xl text-white">
+                <a class="cursor-pointer" href="https://discord.com/api/oauth2/authorize?client_id=1129955440986431538&permissions=414464855104&scope=bot">Invite Bot</a>
+              </h2>
+            </button>
           </div>
           <h5
             class="text-center my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -247,7 +211,9 @@
           </p>
         </div>
       </div>
+
       <!-- Kanye West Quote Generator -->
+
       <div
         class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 mx-2 my-3 max-w-6xl"
       >
@@ -258,18 +224,16 @@
         />
         <div class="flex flex-col justify-between p-4 leading-normal">
           <div class="flex flex-row justify-center mb-2">
-            <a
-              href="https://github.com/Lane-G-Smith/Discord-Bot-Kanye-West-Quotes"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-            >
-              See Code
-            </a>
-            <a
-              href="https://discord.com/api/oauth2/authorize?client_id=1129908300834684980&permissions=414464855104&scope=bot"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-            >
-              Invite Bot
-            </a>
+            <button class="sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+              <h2 class="font-bold text-xl text-white">
+                <a class="cursor-pointer" href="https://github.com/Lane-G-Smith/Discord-Bot-Kanye-West-Quotes">See Code</a>
+              </h2>
+            </button>
+            <button class="sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+              <h2 class="font-bold text-xl text-white">
+                <a class="cursor-pointer" href="https://discord.com/api/oauth2/authorize?client_id=1129908300834684980&permissions=414464855104&scope=bot">Invite Bot</a>
+              </h2>
+            </button>
           </div>
           <h5
             class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -288,7 +252,9 @@
           </p>
         </div>
       </div>
+
       <!-- Trump Quote Generator -->
+
       <div
         href="#"
         class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 mx-2 my-3 max-w-6xl"
@@ -300,18 +266,16 @@
         />
         <div class="flex flex-col justify-between p-4 leading-normal">
           <div class="flex flex-row justify-center mb-2">
-            <a
-              href="https://github.com/Lane-G-Smith/Discord-Bot-Trump-Quotes"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-            >
-              See Code
-            </a>
-            <a
-              href="https://discord.com/api/oauth2/authorize?client_id=1129949100410929273&permissions=414464855104&scope=bot"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-            >
-              Invite Bot
-            </a>
+            <button class="sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+              <h2 class="font-bold text-xl text-white">
+                <a class="cursor-pointer" href="https://github.com/Lane-G-Smith/Discord-Bot-Trump-Quotes">See Code</a>
+              </h2>
+            </button>
+            <button class="sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+              <h2 class="font-bold text-xl text-white">
+                <a class="cursor-pointer" href="https://discord.com/api/oauth2/authorize?client_id=1129949100410929273&permissions=414464855104&scope=bot">Invite Bot</a>
+              </h2>
+            </button>
           </div>
           <h5
             class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -345,22 +309,20 @@
         <img
           class="w-full object-cover rounded-t-lg h-96 sm:p-5 sm:h-64 sm:w-64 sm:rounded-full"
           src="https://freepngimg.com/thumb/chuck_norris/97549-chuck-norris-free-hd-image.png"
-          alt="Picture of Donald Trump, looking frazzled"
+          alt="Picture of Chuck Norris holding machine guns"
         />
         <div class="flex flex-col justify-between p-4 leading-normal">
           <div class="flex flex-row justify-center mb-2">
-            <a
-              href="https://github.com/Lane-G-Smith/Discord-Bot-Chuck-Norris-Jokes"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-            >
-              See Code
-            </a>
-            <a
-              href="https://discord.com/api/oauth2/authorize?client_id=1135640906473689139&permissions=414464855104&scope=bot"
-              class="text-white text-center bg-slate-700 dark:text-slate-700 dark:bg-white rounded-md hover:scale-125 duration-100 p-1 mx-6 w-20"
-            >
-              Invite Bot
-            </a>
+            <button class="sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+              <h2 class="font-bold text-xl text-white">
+                <a class="cursor-pointer" href="https://github.com/Lane-G-Smith/Discord-Bot-Chuck-Norris-Jokes">See Code</a>
+              </h2>
+            </button>
+            <button class="sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+              <h2 class="font-bold text-xl text-white">
+                <a class="cursor-pointer" href="https://discord.com/api/oauth2/authorize?client_id=1135640906473689139&permissions=414464855104&scope=bot">Invite Bot</a>
+              </h2>
+            </button>
           </div>
           <h5
             class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -380,50 +342,116 @@
         </div>
       </div>
 
-      <!-- Random Fact Generator -->
+      <!-- Useless Fact Generator -->
 
-      <!-- Chuck Norris Jokes -->
+      <div
+      href="#"
+      class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md sm:flex-row dark:border-gray-700 dark:bg-gray-800 mx-2 my-3 max-w-6xl"
+    >
+      <img
+        class="w-full object-cover rounded-t-lg h-96 sm:p-5 sm:h-64 sm:w-64 sm:rounded-full"
+        src="https://photos.smugmug.com/External-Website-Photos/n-MK8QBN/Github/i-pZMvQSf/0/20a15d29/X2/2023_08_07_09_34_10__DPM%2B%2B%202M%20SDE%20Karras_34_9_portrait%2B1.0_919685869-X2.jpg"
+        alt="Picture of someone looking like they know it all"
+      />
+      <div class="flex flex-col justify-between p-4 leading-normal">
+        <div class="flex flex-row justify-center mb-2">
+          <button class="sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+            <h2 class="font-bold text-xl text-white">
+              <a class="cursor-pointer" href="https://github.com/Lane-G-Smith/Discord-Bot-Useless-Facts">See Code</a>
+            </h2>
+          </button>
+          <button class="sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+            <h2 class="font-bold text-xl text-white">
+              <a class="cursor-pointer" href="https://discord.com/api/oauth2/authorize?client_id=1137885624733548555&permissions=414464855104&scope=bot">Invite Bot</a>
+            </h2>
+          </button>
+        </div>
+        <h5
+          class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+        >
+          Useless Fact Generator
+        </h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          A simple vanilla javascript Discord bot that posts random useless facts when called on using the rest API from
+          <a class="text-blue-500" href="https://www.djtech.net/humor/useless_facts.htm"
+            >HERE</a
+          >
+          and Responds to chat whenever someone types "fact". This bot is just for fun, and
+          can be pretty entertaining when let loose in a server with friends.
+        </p>
+      </div>
+    </div>
 
       <!--Terribly Written Insults -->
     </section>
 
-    <!-- footer with social media links -->
+    <!-- footer-->
 
-    <footer
-      class="min-w-full sm: p-10 sm:flex h-40 sm:justify-center sm:items-center dark:text-white"
-    >
-      <h2 class="text-xl font-bold px-5 text-center">
-        Web Design By Lane Smith
-      </h2>
-      <ul class="width:full flex sm:flex justify-center flex-wrap">
-        <li class="h-8 w-8 m-3">
-          <a href="https://www.linkedin.com/in/lane-g-smith"
-            ><img
-              src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
-          /></a>
-        </li>
-        <li class="h-8 w-8 m-3">
-          <a href="https://www.instagram.com/lanegpersonal/"
-            ><img
-              src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
-          /></a>
-        </li>
-        <li class="h-8 w-8 m-3">
-          <a href="https://github.com/Lane-G-Smith">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLHv_jIswdZGXPRC_L76ITDc4nxvOO8tF22AYPXvpnO50JSvbKcPf59QRmP6GxNglhGyI&usqp=CAU"
-          /></a>
-        </li>
-        <li class="h-8 w-8 m-3">
-          <a
-            href="https://github.com/Lane-G-Smith/Lanesmith.Info-Bots"
-            class="block bg-blue-700 rounded bg-transparent text-blue-700 md:p-0 dark:text-blue-500 justify-center font-medium"
-            aria-current="page"
-            >Website <br />Code</a
-          >
-        </li>
-      </ul>
+    <footer class="mt-12 mb-8 flex flex-col sm:flex-row justify-around">
+
+      <!-- technologies used for page -->
+
+      <div class="self-center shrink-0">
+        <table class="block text-xs font-bold text-center dark:text-white">
+          <th>Built Using</th>
+          <tr class="h-2">
+            <td class="inline-block align-bottom w-16">
+              <img
+                class="h-8 w-8 fa-brands fa-html5 fa-2xs"
+                style="color: #ff0000"
+              />
+              <h2 class=""><strong>HTML5</strong></h2>
+            </td>
+            <td class="inline-block align-bottom w-16">
+              <img
+                class="h-8 w-8 fa-brands fa-css3-alt fa-2xs"
+                style="color: #005eff"
+              />
+              <h2 class=""><strong>CSS3</strong></h2>
+            </td>
+            <td class="inline-block align-bottom w-16">
+              <img
+                class="h-8 w-8 fa-brands fa-square-js fa-2xs"
+                style="color: #ffdd00"
+              />
+              <h2 class=""><strong>ES6</strong></h2>
+            </td>
+            <td class="inline-block align-bottom w-16">
+              <img
+                class="p-3 h-11 w-full justify-start bg-cover"
+                src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
+              />
+              <h2 class="text-center"><strong>TAILWIND</strong></h2>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- social media links -->
+
+      <div class="pt-4 sm:self-end self-center shrink-0">
+      <button class="hover:scale-110 duration-100 hover:duration-100 h-8 w-8 align-bottom mx-2">
+        <a href="https://www.linkedin.com/in/lane-g-smith"
+          ><img
+            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
+        /></a></button>
+      <button class="hover:scale-110 duration-100 hover:duration-100 h-8 w-8 mx-2 align-bottom">
+        <a href="https://github.com/Lane-G-Smith">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLHv_jIswdZGXPRC_L76ITDc4nxvOO8tF22AYPXvpnO50JSvbKcPf59QRmP6GxNglhGyI&usqp=CAU"
+        /></a>
+        </button>
+      <button class="h-8 sm:mr-5 hover:scale-110 duration-100 hover:duration-100 px-2 py-1 font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 shadow-md shadow-slate-400 dark:shadow-zinc-900 hover:focus mx-2">
+        <h2 class="font-bold text-sm text-white">
+          <a class="cursor-pointer" href="https://github.com/Lane-G-Smith/Lanesmith.Info-Discord-Bots">Website-Code</a>
+        </h2>
+      </button>
+      </div>
+
+      <!-- footer text -->
+
+    <h2 class="dark:text-white font-bold pt-4 text-center align-text-bottom sm:self-end">Web Design By Lane Smith</h2>
     </footer>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

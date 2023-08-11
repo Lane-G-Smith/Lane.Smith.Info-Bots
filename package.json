@@ -4,6 +4,6 @@
   },
   "dependencies": {},
   "scripts": {
-    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "watch": "npx tailwindcss -i ./input.css -o ./output.css --watch"
   }
 }
